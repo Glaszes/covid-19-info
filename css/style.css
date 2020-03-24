@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body,
+ul {
+    margin: 0 !important;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 50vh;
+
+    position: relative;
+    /* Flexbox stuff */
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+
+    /* Text styles */
+    text-align: center;
+    color: white;
+    /* ADD THIS LINE */
+
+    /* Background styles */
+    background-image: url('../img/hero-img.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.hero h1 {
+    /* Text styles */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 112px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #FFFFFF;
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero nav ul {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    width: 90%;
+    top: 85%;
+}
+
+.hero nav ul li:not(:last-child) {
+    margin-inline-end: 47px;
+}
+
+.hero nav ul li {
+    list-style-type: none;
+}
+
+.hero nav ul li:hover,
+.active {
+    border-block-end: 3px solid #FFFFFF;
+}
+
+.hero nav ul li a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.overview {
+    margin: auto;
+    width: 80%;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 57px;
+}
+
+.overview h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
+
+    color: #333333;
+}
+
+.overview p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.overview li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    /* or 169% */
+
+    color: #000000;
+}
+
+[prevent] {
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height, or 112% */
+
+    text-transform: uppercase;
+
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+}
+
+.col-2 a,
+.learn-more a {
+    display: flex;
+    align-items: flex-end;
+    height: 28%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 27px;
+    text-decoration: none;
+    padding: 25px 25px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 70px;
+    color: #333333;
+}
+
+.col-2 a {
+    margin-block-end: 30px;
+}
+
+.col-2 a img,
+.learn-more a img {
+    margin-inline-end: 17px;
+}
+
+@media screen and (max-width: 81.25rem) {
+    .hero h1 {
+        font-size: 55px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .hero nav ul {
+        justify-content: center;
+    }
+
+    .col-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 46.5rem) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .hero nav ul {
+        flex-direction: column;
+        top: 70%;
+    }
+
+    .hero nav ul li {
+        margin-inline-end: 0;
+        margin-block-end: 10px;
+        width: 20%;
+    }
+
+    .hero nav ul li a {
+        font-size: 16px;
+    }
+
+
+}
+
+/* header ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+
+header ul li{
+    margin-inline-end: 47px;
+    border-block-end: 1px solid #ffffff;
+}
+
+header ul li a{
+   text-decoration: none;
+} */
